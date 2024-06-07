@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from todo import todo_router # main에 todo 를 추가. todo.py 파일의 todo_router를 추가하겠다~
 import uvicorn
 app = FastAPI()
-origins = ["http://127.0.0.1:5500"]#  여기다가 엔진엑스 아마존 주소 등록해야함.
+origins = ["http://127.0.0.1:5500", "http://54.211.86.56:8080"]#  여기다가 엔진엑스 아마존 주소 등록해야함.
 
 app.add_middleware(
 CORSMiddleware,
